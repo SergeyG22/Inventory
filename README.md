@@ -72,3 +72,5 @@ nmake Release
 ```
 
 ### Preview
+
+![hippo](https://github.com/SergeyG22/Inventory/blob/master/resource/animation.git/animation.gif)
