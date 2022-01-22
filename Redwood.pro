@@ -15,37 +15,36 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += \
-    apple.cpp \
-    exit.cpp \
-    game.cpp \
-    inventorytable.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    menu.cpp \
-    newgame.cpp \
-    sqlitedatabase.cpp
+INCLUDEPATH += $$PWD/include
 
-HEADERS += \
-    apple.h \
-    buttons.h \
-    closegamecommand.h \
-    command.h \
-    creategamecommand.h \
-    data.h \
-    exit.h \
-    game.h \
-    inventory.h \
-    inventorytable.h \
-    item.h \
-    mainwindow.h \
-    menu.h \
-    newgame.h \
-    sqlitedatabase.h \
-    stopgamecommand.h
+SOURCES += src/apple.cpp \
+           src/exit.cpp \
+           src/game.cpp \
+           src/inventorytable.cpp \
+           src/main.cpp \
+           src/mainwindow.cpp \
+           src/menu.cpp \
+           src/newgame.cpp \
+           src/sqlitedatabase.cpp \
 
-FORMS += \
-    mainwindow.ui
+HEADERS += include/apple.h \
+           include/buttons.h \
+           include/closegamecommand.h \
+           include/command.h \
+           include/creategamecommand.h \
+           include/data.h \
+           include/exit.h \
+           include/game.h \
+           include/inventory.h \
+           include/inventorytable.h \
+           include/item.h \
+           include/mainwindow.h \
+           include/menu.h \
+           include/newgame.h \
+           include/sqlitedatabase.h \
+           include/stopgamecommand.h \
+
+FORMS += ui/mainwindow.ui \
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

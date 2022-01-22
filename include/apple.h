@@ -20,7 +20,7 @@ public:
    QMediaPlayer *getSound()const  override;
    void executeQuery();
 private:
-   QString path{":/new/prefix1/images/apple.jpg"};
+   QString path{":/new/prefix1/resource/images/apple.jpg"};
    QIcon icon{ path };
    QSize size{ 150,150 };
    QString item_ = "apple";
